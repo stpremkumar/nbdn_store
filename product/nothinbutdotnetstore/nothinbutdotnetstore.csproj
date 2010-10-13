@@ -53,6 +53,7 @@
     <Compile Include="web\infrastructure\RequestCommandRegistry.cs" />
     <Compile Include="web\infrastructure\RequestFactory.cs" />
     <Compile Include="web\infrastructure\RequestHandler.cs" />
+    <Compile Include="web\infrastructure\RequestCommandSpecification.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
