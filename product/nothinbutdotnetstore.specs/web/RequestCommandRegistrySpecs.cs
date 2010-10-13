@@ -29,6 +29,8 @@ namespace nothinbutdotnetstore.specs.web
                  all_commands.Add(the_command_that_can_process_the_request);
 
                  the_command_that_can_process_the_request.Stub(command => command.can_handle(request)).Return(true);
+
+                 provide_a_basic_sut_constructor_argument<IEnumerable<RequestCommand>>(all_commands);
              };
 
              Because b = () =>
