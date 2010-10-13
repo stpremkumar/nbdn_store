@@ -38,9 +38,10 @@ namespace nothinbutdotnetstore.specs.web
              Because b = () =>
                  result = sut.get_the_command_that_can_process(request);
 
-        
-             It should_return_the_command_that_can_process_the_request = () =>        
+
+             It should_return_the_command_that_can_process_the_request = () =>
                  result.ShouldEqual(the_command_that_can_process_the_request);
+
 
              static RequestCommand result;
              static RequestCommand the_command_that_can_process_the_request;
