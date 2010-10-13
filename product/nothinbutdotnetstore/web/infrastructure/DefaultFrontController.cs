@@ -2,7 +2,7 @@ namespace nothinbutdotnetstore.web.infrastructure
 {
     public class DefaultFrontController : FrontController
     {
-        RequestCommandRegistry registry;
+        readonly RequestCommandRegistry registry;
 
         public DefaultFrontController(RequestCommandRegistry registry)
         {
@@ -11,7 +11,8 @@ namespace nothinbutdotnetstore.web.infrastructure
 
         public void process(Request request)
         {
-            registry.get_the_command_that_can_process(request).process(request);
+            RequestCommand rc = registry.get_the_command_that_can_process(request);
+            rc.process(request);
         }
     }
 }
