@@ -1,4 +1,4 @@
-namespace nothinbutdotnetstore.web.infrastructure
+namespace nothinbutdotnetstore.web.infrastructure.frontcontroller
 {
     public interface FrontController
     {

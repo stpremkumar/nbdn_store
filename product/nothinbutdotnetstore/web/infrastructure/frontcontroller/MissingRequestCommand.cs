@@ -1,6 +1,6 @@
 using System;
 
-namespace nothinbutdotnetstore.web.infrastructure
+namespace nothinbutdotnetstore.web.infrastructure.frontcontroller
 {
     public class MissingRequestCommand  : RequestCommand
     {

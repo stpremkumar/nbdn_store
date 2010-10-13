@@ -64,9 +64,10 @@
     <Compile Include="examples\CalculatorSpecs.cs" />
     <Compile Include="utilities\ObjectMother.cs" />
     <Compile Include="web\FrontControllerSpecs.cs" />
-    <Compile Include="web\RequestCommandRegistrySpecs.cs" />
+    <Compile Include="web\CommandRegistrySpecs.cs" />
     <Compile Include="web\RequestCommandSpecs.cs" />
     <Compile Include="web\RequestHandlerSpecs.cs" />
+    <Compile Include="web\ViewMainDepartmentsInTheStoreSpecs.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\nothinbutdotnetstore\nothinbutdotnetstore.csproj">

@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace nothinbutdotnetstore.web.infrastructure
+namespace nothinbutdotnetstore.web.infrastructure.frontcontroller
 {
-    public class DefaultRequestCommandRegistry : RequestCommandRegistry
+    public class DefaultCommandRegistry : CommandRegistry
     {
         IEnumerable<RequestCommand> all_commands;
 
-        public DefaultRequestCommandRegistry(IEnumerable<RequestCommand> all_commands)
+        public DefaultCommandRegistry(IEnumerable<RequestCommand> all_commands)
         {
             this.all_commands = all_commands;
         }

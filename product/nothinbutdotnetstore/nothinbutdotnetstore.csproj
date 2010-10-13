@@ -43,17 +43,19 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="web\infrastructure\DefaultFrontController.cs" />
-    <Compile Include="web\infrastructure\DefaultRequestCommand.cs" />
-    <Compile Include="web\infrastructure\DefaultRequestCommandRegistry.cs" />
-    <Compile Include="web\infrastructure\FrontController.cs" />
-    <Compile Include="web\infrastructure\MissingRequestCommand.cs" />
-    <Compile Include="web\infrastructure\Request .cs" />
-    <Compile Include="web\infrastructure\RequestCommand.cs" />
-    <Compile Include="web\infrastructure\RequestCommandRegistry.cs" />
-    <Compile Include="web\infrastructure\RequestFactory.cs" />
-    <Compile Include="web\infrastructure\RequestHandler.cs" />
-    <Compile Include="web\infrastructure\RequestCommandSpecification.cs" />
+    <Compile Include="web\application\ViewMainDepartmentsInTheStore.cs" />
+    <Compile Include="web\infrastructure\frontcontroller\ApplicationCommand .cs" />
+    <Compile Include="web\infrastructure\frontcontroller\DefaultFrontController.cs" />
+    <Compile Include="web\infrastructure\frontcontroller\DefaultRequestCommand.cs" />
+    <Compile Include="web\infrastructure\frontcontroller\DefaultCommandRegistry.cs" />
+    <Compile Include="web\infrastructure\frontcontroller\FrontController.cs" />
+    <Compile Include="web\infrastructure\frontcontroller\MissingRequestCommand.cs" />
+    <Compile Include="web\infrastructure\frontcontroller\Request .cs" />
+    <Compile Include="web\infrastructure\frontcontroller\RequestCommand.cs" />
+    <Compile Include="web\infrastructure\frontcontroller\CommandRegistry.cs" />
+    <Compile Include="web\infrastructure\frontcontroller\RequestFactory.cs" />
+    <Compile Include="web\infrastructure\frontcontroller\RequestHandler.cs" />
+    <Compile Include="web\infrastructure\frontcontroller\RequestCommandSpecification.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

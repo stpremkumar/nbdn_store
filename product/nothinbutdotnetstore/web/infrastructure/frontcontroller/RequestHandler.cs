@@ -1,11 +1,12 @@
 using System.Web;
 
-namespace nothinbutdotnetstore.web.infrastructure
+namespace nothinbutdotnetstore.web.infrastructure.frontcontroller
 {
     public class RequestHandler : IHttpHandler
     {
         RequestFactory request_factory;
         FrontController front_controller;
+
 
         public RequestHandler(RequestFactory request_factory, FrontController front_controller)
         {
