@@ -1,7 +1,9 @@
+using nothinbutdotnetstore.web.application;
+
 namespace nothinbutdotnetstore.web.infrastructure.frontcontroller
 {
     public interface ApplicationCommand 
     {
-        void process(Request request);
+        Response process(Request request);
     }
 }

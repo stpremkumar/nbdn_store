@@ -10,11 +10,7 @@ namespace nothinbutdotnetstore.specs.web
  {   
      public class RequestHandlerSpecs
      {
-         public abstract class concern : Observes<IHttpHandler,
-                                             RequestHandler>
-         {
-        
-         }
+         public abstract class concern : Observes<IHttpHandler, RequestHandler>{}
 
          [Subject(typeof(RequestHandler))]
          public class when_processing_an_incoming_http_context : concern
@@ -34,6 +30,7 @@ namespace nothinbutdotnetstore.specs.web
 
              It should_delegate_the_processing_of_a_request_to_our_front_controller = () =>
                  front_controller.received(controller => controller.process(request));
+
 
              static FrontController front_controller;
              static Request request;

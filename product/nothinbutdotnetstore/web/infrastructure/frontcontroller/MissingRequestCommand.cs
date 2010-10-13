@@ -1,10 +1,11 @@
 using System;
+using nothinbutdotnetstore.web.application;
 
 namespace nothinbutdotnetstore.web.infrastructure.frontcontroller
 {
     public class MissingRequestCommand  : RequestCommand
     {
-        public void process(Request request)
+        public Response process(Request request)
         {
             throw new NotImplementedException();
         }

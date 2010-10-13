@@ -43,7 +43,10 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="web\application\DepartmentsResponse.cs" />
+    <Compile Include="web\application\Response.cs" />
     <Compile Include="web\application\ViewMainDepartmentsInTheStore.cs" />
+    <Compile Include="web\data\DepartmentData.cs" />
     <Compile Include="web\infrastructure\frontcontroller\ApplicationCommand .cs" />
     <Compile Include="web\infrastructure\frontcontroller\DefaultFrontController.cs" />
     <Compile Include="web\infrastructure\frontcontroller\DefaultRequestCommand.cs" />

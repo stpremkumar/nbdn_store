@@ -7,7 +7,6 @@ namespace nothinbutdotnetstore.web.infrastructure.frontcontroller
         RequestFactory request_factory;
         FrontController front_controller;
 
-//TEST
         public RequestHandler(RequestFactory request_factory, FrontController front_controller)
         {
             this.request_factory = request_factory;

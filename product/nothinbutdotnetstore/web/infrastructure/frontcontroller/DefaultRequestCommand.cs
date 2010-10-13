@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using nothinbutdotnetstore.web.application;
+
 namespace nothinbutdotnetstore.web.infrastructure.frontcontroller
 {
     public class DefaultRequestCommand : RequestCommand
@@ -11,9 +14,9 @@ namespace nothinbutdotnetstore.web.infrastructure.frontcontroller
             this.application_command = application_command;
         }
 
-        public void process(Request request)
+        public Response process(Request request)
         {
-            application_command.process(request);
+            return application_command.process(request);
         }
 
         public bool can_handle(Request request)
