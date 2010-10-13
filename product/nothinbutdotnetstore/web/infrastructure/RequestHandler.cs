@@ -1,11 +1,9 @@
-using System;
 using System.Web;
 
 namespace nothinbutdotnetstore.web.infrastructure
 {
     public class RequestHandler : IHttpHandler
     {
-        
         RequestFactory request_factory;
         FrontController front_controller;
 
@@ -14,15 +12,15 @@ namespace nothinbutdotnetstore.web.infrastructure
             this.request_factory = request_factory;
             this.front_controller = front_controller;
         }
+
         public void ProcessRequest(HttpContext context)
         {
-            var request = request_factory.create_from(context);
-            front_controller.process(request);
+            front_controller.process(request_factory.create_request_from(context));
         }
 
         public bool IsReusable
         {
-            get { throw new NotImplementedException(); }
+            get { return true; }
         }
     }
 }

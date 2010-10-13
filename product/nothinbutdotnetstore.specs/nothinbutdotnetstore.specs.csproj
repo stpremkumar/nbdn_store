@@ -63,6 +63,7 @@
     <Compile Include="examples\Calculator.cs" />
     <Compile Include="examples\CalculatorSpecs.cs" />
     <Compile Include="utilities\ObjectMother.cs" />
+    <Compile Include="web\FrontControllerSpecs.cs" />
     <Compile Include="web\RequestHandlerSpecs.cs" />
   </ItemGroup>
   <ItemGroup>

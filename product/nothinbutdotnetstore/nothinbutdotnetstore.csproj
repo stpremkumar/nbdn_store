@@ -43,8 +43,11 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="web\infrastructure\DefaultFrontController.cs" />
     <Compile Include="web\infrastructure\FrontController.cs" />
     <Compile Include="web\infrastructure\Request .cs" />
+    <Compile Include="web\infrastructure\RequestCommand.cs" />
+    <Compile Include="web\infrastructure\RequestCommandRegistry.cs" />
     <Compile Include="web\infrastructure\RequestFactory.cs" />
     <Compile Include="web\infrastructure\RequestHandler.cs" />
   </ItemGroup>

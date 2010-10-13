@@ -20,18 +20,18 @@ namespace nothinbutdotnetstore.specs.web
          {
              Establish c = () =>
              {
-                 the_http_context = ObjectMother.create_http_context();
                  front_controller = the_dependency<FrontController>();
                  request_factory = the_dependency<RequestFactory>();
+                 the_http_context = ObjectMother.create_http_context();
                  request = an<Request>();
 
-                 request_factory.Stub(factory => factory.create_from(the_http_context)).Return(request);
+                 request_factory.Stub(factory => factory.create_request_from(the_http_context)).Return(request);
              };
 
              Because b = () =>
                  sut.ProcessRequest(the_http_context);
 
-             It should_delegate_the_processing_to_our_front_controller = () =>
+             It should_delegate_the_processing_of_a_request_to_our_front_controller = () =>
                  front_controller.received(controller => controller.process(request));
 
              static FrontController front_controller;
