@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using nothinbutdotnetstore.web.infrastructure.frontcontroller.stubs;
 
 namespace nothinbutdotnetstore.web.infrastructure.frontcontroller
 {
@@ -8,6 +9,11 @@ namespace nothinbutdotnetstore.web.infrastructure.frontcontroller
         IEnumerable<RequestCommand> all_commands;
 
         public DefaultCommandRegistry(IEnumerable<RequestCommand> all_commands)
+        {
+            this.all_commands = all_commands;
+        }
+
+        public DefaultCommandRegistry():this(new StubSetOfCommands())
         {
             this.all_commands = all_commands;
         }

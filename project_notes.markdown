@@ -7,6 +7,10 @@
 
 * All of the specs for a given component are found in a file named [ComponentName].specs.cs
 
+* All stubs will be placed in a stub namespace under the namespace where the contracts they are stubbing live.
+
+* All stubs will be prefixed with the name Stub
+
 
 ##Construction of a Front Controller
 

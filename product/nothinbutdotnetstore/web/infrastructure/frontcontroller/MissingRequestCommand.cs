@@ -5,7 +5,7 @@ namespace nothinbutdotnetstore.web.infrastructure.frontcontroller
 {
     public class MissingRequestCommand  : RequestCommand
     {
-        public Response process(Request request)
+        public void process(Request request)
         {
             throw new NotImplementedException();
         }

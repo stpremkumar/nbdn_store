@@ -1,4 +1,5 @@
 using System.Web;
+using nothinbutdotnetstore.web.infrastructure.frontcontroller.stubs;
 
 namespace nothinbutdotnetstore.web.infrastructure.frontcontroller
 {
@@ -6,6 +7,11 @@ namespace nothinbutdotnetstore.web.infrastructure.frontcontroller
     {
         RequestFactory request_factory;
         FrontController front_controller;
+
+        public RequestHandler():this(new StubRequestFactory(),
+            new DefaultFrontController())
+        {
+        }
 
         public RequestHandler(RequestFactory request_factory, FrontController front_controller)
         {

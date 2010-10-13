@@ -1,22 +1,28 @@
-using System;
-using System.Web;
-using nothinbutdotnetstore.web.data;
 using nothinbutdotnetstore.web.infrastructure.frontcontroller;
+using nothinbutdotnetstore.web.infrastructure.frontcontroller.stubs;
+using nothinbutdotnetstore.web.tasks;
+using nothinbutdotnetstore.web.tasks.stubs;
 
 namespace nothinbutdotnetstore.web.application
 {
     public class ViewMainDepartmentsInTheStore : ApplicationCommand
     {
-        DepartmentData department_data;
+        DepartmentRepository department_repository;
+        ResponseEngine response_engine;
 
-        public ViewMainDepartmentsInTheStore(DepartmentData department_data)
+        public ViewMainDepartmentsInTheStore() : this(new StubDepartmentRepository(), new StubResponseEngine())
         {
-            this.department_data = department_data;
         }
 
-        public Response process(Request request)
+        public ViewMainDepartmentsInTheStore(DepartmentRepository department_repository, ResponseEngine response_engine)
         {
-            return new DepartmentsResponse(department_data.get_department_data());
+            this.department_repository = department_repository;
+            this.response_engine = response_engine;
+        }
+
+        public void process(Request request)
+        {
+            response_engine.display(department_repository.get_the_main_departments());
         }
     }
 }
