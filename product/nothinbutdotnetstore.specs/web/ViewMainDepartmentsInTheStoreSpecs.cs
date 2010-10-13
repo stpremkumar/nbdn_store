@@ -35,7 +35,6 @@ namespace nothinbutdotnetstore.specs.web
                 () => { response_engine.received(x => x.display(department_list)); };
 
             protected static Request request;
-            protected static Response response;
             protected static IEnumerable<DepartmentItem> department_list;
             protected static DepartmentRepository department_repository;
             static ResponseEngine response_engine;
