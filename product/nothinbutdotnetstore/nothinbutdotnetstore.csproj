@@ -40,6 +40,13 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="web\infrastructure\FrontController.cs" />
+    <Compile Include="web\infrastructure\Request .cs" />
+    <Compile Include="web\infrastructure\RequestFactory.cs" />
+    <Compile Include="web\infrastructure\RequestHandler.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
