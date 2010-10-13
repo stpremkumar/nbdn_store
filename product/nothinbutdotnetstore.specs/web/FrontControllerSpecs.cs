@@ -1,7 +1,7 @@
  using Machine.Specifications;
  using Machine.Specifications.DevelopWithPassion.Rhino;
- using nothinbutdotnetstore.web.infrastructure;
  using Rhino.Mocks;
+ using nothinbutdotnetstore.web.infrastructure;
 
 namespace nothinbutdotnetstore.specs.web
  {   

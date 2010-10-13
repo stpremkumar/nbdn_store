@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="web\infrastructure\DefaultFrontController.cs" />
+    <Compile Include="web\infrastructure\DefaultRequestCommandRegistry.cs" />
     <Compile Include="web\infrastructure\FrontController.cs" />
     <Compile Include="web\infrastructure\Request .cs" />
     <Compile Include="web\infrastructure\RequestCommand.cs" />
