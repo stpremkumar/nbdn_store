@@ -1,23 +1,20 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace nothinbutdotnetstore.web.infrastructure
 {
     public class DefaultRequestCommandRegistry : RequestCommandRegistry
     {
-        IEnumerable<RequestCommand> commands;
-        public DefaultRequestCommandRegistry(IEnumerable<RequestCommand> commands)
+        IEnumerable<RequestCommand> all_commands;
+
+        public DefaultRequestCommandRegistry(IEnumerable<RequestCommand> all_commands)
         {
-            this.commands = commands;
+            this.all_commands = all_commands;
         }
 
         public RequestCommand get_the_command_that_can_process(Request request)
         {
-            RequestCommand rc = commands.GetEnumerator().Current;
-            return rc;
-
-            //throw new NotImplementedException();
+            return all_commands.First(command => command.can_handle(request));
         }
-
     }
 }
