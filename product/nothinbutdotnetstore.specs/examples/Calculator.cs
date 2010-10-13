@@ -4,7 +4,7 @@ using System.Linq;
 using System.Security;
 using System.Threading;
 
-namespace nothinbutdotnetstore
+namespace nothinbutdotnetstore.specs.examples
 {
     public class Calculator
     {
